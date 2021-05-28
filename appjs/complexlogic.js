@@ -1291,14 +1291,10 @@ function ppcal()
            var y=(2.718)**(-a);
            var z=factorial(b);
            var num= (s*y)/z;
-           ans+="\\[\\space P(X{=}"+b+")= \\frac{"+a+"^"+b+" \\times e^{-"+a+"}}{"+b+"!}\\]";
-           ans+="\\[\\space P(X{=}"+b+")= \\frac{"+(s*y).toFixed(4)+"}{"+z+"}\\]";
-           ans+="\\[\\space P(X{=}"+b+")= "+num.toFixed(4)+"\\]";
-           ans+="The answer is  "+num.toFixed(4);
+           ans="The answer is:" + num;
     }
 
     document.getElementById("ppans").innerHTML=ans;
-    renderMathInElement(document.getElementById("ppans"));
 
 }
 
